@@ -97,15 +97,9 @@ SELECT * FROM dept_employees;
 
 
 
----- Calculating average salary by title from table "salaries" and from table "title"
----- And using this query in the jupyter notebook to plot a bar chart of average salary by title.
 
-SELECT titles.title, ROUND(AVG(salaries.salary),2) AS "average_salary"
-FROM titles
-JOIN salaries
-ON titles.emp_no = salaries.emp_no
-GROUP BY title
-ORDER BY average_salary DESC;
+
+
 
 
 
